@@ -4,44 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dope Lab</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: grey;
-            background-color: black;
-        }
-
-        .header {
-            background-color: limegreen;
-            color: black;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .navbar {
-            overflow: hidden;
-            background-color: grey;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: black;
-        }
-
-        .main-content {
-            padding: 15px;
-            background-color: #f2f2f2;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
     <div class="header">
@@ -56,7 +21,7 @@
     </div>
 
     <div class="main-content">
-        <h2>Our Dope Products</h2>
+        <!-- <h2>Our Dope Products</h2>
         <p>Welcome to our exclusive collection at Dope Lab.</p>
         <button class="snipcart-add-item"
             data-item-id="starry-night"
@@ -73,7 +38,38 @@
             data-item-custom4-name="Shirt Size"
             data-item-custom4-options="Small|Medium|Large|X-Large">
             Add to cart
-        </button>
+        </button> -->
+        <div class="wrapper">
+            <header class="header">My header</header>
+            <aside class="sidebar">
+                <img src="assets\images\frog.jpg">
+            </aside>
+            <article class="content">
+              <h1>2 column, header and footer</h1>
+              <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+              <img src="assets\images\add.png" alt="Plus" class="content-image snipcart-add-item"
+                data-item-id="starry-night"
+                data-item-price="0.00"
+                data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                data-item-image="assets\images\frog.jpg" 
+                data-item-name="The Starry Night"
+                data-item-custom1-name="Shirt Color"
+                data-item-custom1-options="Black|Brown|Gold"
+                data-item-custom2-name="Shirt Design"
+                data-item-custom2-options="Red|White|Blue"
+                data-item-custom3-name="Shirt Swag"
+                data-item-custom3-options="Yes|No"
+                data-item-custom4-name="Shirt Size"
+                data-item-custom4-options="Small|Medium|Large|X-Large">
+            </article>
+            <aside class="sidebar">Sidebar</aside>
+            <article class="content">
+              <h1>2 column, header and footer</h1>
+              <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+            </article>
+            <footer class="footer">My footer</footer>
+        </div>
+        
     </div>
 
     <script>
