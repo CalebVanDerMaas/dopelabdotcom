@@ -79,7 +79,7 @@ body {
     .sidebar img {
         width: 100%; /* Image width matches sidebar width */
         aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
-        object-fit: cover; /* Adjust this as needed, 'cover' or 'contain' */
+        object-fit: contain !important; /* Adjust this as needed, 'cover' or 'contain' */
     }
 
     .content {
@@ -146,7 +146,7 @@ body {
   .sidebar img {
     width: 100%; /* Image width matches sidebar width */
     aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
-    object-fit: contain; /* Adjust this as needed, 'cover' or 'contain' */
+    object-fit: contain !important; /* Adjust this as needed, 'cover' or 'contain' */
 }
 
   .content {
@@ -172,7 +172,7 @@ body {
 .content-image {
     width: 10%; /* Width of the image */
     aspect-ratio: 1/1;
-    object-fit: cover; /* Adjust as needed */
+    object-fit: contain !important; /* Adjust as needed */
     cursor: pointer; /* Change cursor to pointer on hover */
     margin-left: 10px; /* Space between content and image, adjust as needed */
 }
