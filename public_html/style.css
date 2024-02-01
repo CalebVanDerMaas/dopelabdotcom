@@ -4,11 +4,43 @@ body {
     background-color: black;
 }
 
+.product-description {
+  margin-left: 20px;
+}
+
+.cart-icon {
+  aspect-ratio: 1/1;
+  width: 40px;
+  text-align: right;
+  justify-content: right;
+}
 .header {
     background-color: limegreen;
     color: black;
     padding: 10px;
     text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  /* adjustment */
+  position: relative;
+  /* new */
+}
+
+.header.h1 {
+  flex: 0 1 auto;
+  position: absolute;
+  /* new */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cart-icon {
+  flex: 0 1 auto;
+  margin-left: auto;
+  /* new */
 }
 
 .navbar {
@@ -57,6 +89,7 @@ body {
   
   h1, p {
     margin: 0 0 1em 0;
+    text-align: center;
   }
   
   .wrapper {
@@ -113,6 +146,7 @@ body {
       grid-column: 1 / -1;
       /* needed for the floated layout */
       clear: both;
+      justify-content: center;
     }
   
   }
@@ -175,4 +209,122 @@ body {
     object-fit: contain !important; /* Adjust as needed */
     cursor: pointer; /* Change cursor to pointer on hover */
     margin-left: 10px; /* Space between content and image, adjust as needed */
+}
+
+@media screen and (max-width: 600px) {
+  .circle {
+    background: limegreen;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 29.2%;
+    left: 78%;
+    z-index: 0;
+  }
+  .cart-icon {
+    position: fixed;
+    top: 30%;
+    left: 80%;
+    z-index: 2;
+  }
+  .wrapper {
+    padding: 10px; /* Reduce padding */
+    margin: 0; /* Remove margin to use the full screen width */
+  }
+  sidebar img {
+    width: 70%; /* Reduce image size to fit the viewport */
+    margin: 0 auto; /* Center the image */
+  }
+  .navbar a {
+      float: none; /* Stack nav items */
+      width: 100%; /* Full width */
+      padding: 10px; /* Larger padding */
+  }
+  .content {
+    padding: 10px;
+  }
+  .content img.content-image {
+    width: 25px !important; /* Smaller button */
+    min-width: 25px;
+    margin-right: 10px;
+    margin-top: 5px; /* Less space above the button */
+    align-items: end;
+  }
+  .content h1 {
+    font-size: 1em; /* Smaller font size for the price and title */
+    margin-bottom: 5px;
+    margin-right: 30px !important;
+    align-items: start !important;
+
+  }
+
+  .wrapper {
+      grid-template-columns: 1fr; /* Stack grid items */
+      display: flex; /* Use Flexbox */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align items horizontally */
+      justify-content: center; /* Center-align items vertically */
+  }
+
+  .sidebar, .content {
+      width: 100%; /* Full width for small screens */
+      margin: 10px 0; /* Add some margin for spacing */
+  }
+
+  .content h1, .content p {
+      font-size: larger; /* Larger font for readability */
+      margin-right: 30px;
+  }
+
+  .content-button, .content-image {
+      width: 50px; /* Larger buttons and images for easier interaction */
+      height: 50px;
+      line-height: 50px;
+  }
+  .sidebar img, .content img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .product-description {
+    display: none; /* Hide the paragraph */
+  }
+  /* Target the specific .content item that holds the Sweatshirt */
+  .content.sweatshirt {
+    padding: 10px; /* Adjust padding if necessary */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around; /* Adjusts space distribution */
+    height: 100%; /* Optional: you can specify a height to ensure proper spacing */
+  }
+
+  /* Adjust the button within the .content.sweatshirt */
+  .content.sweatshirt img.content-image {
+      /* Adjust the size of the button if necessary */
+      width: 25px;
+      min-width: 25px;
+      /* Additional styling to ensure it's centered and aligned with the price */
+      align-self: end; /* Aligns the button to the center of its flex container */
+      margin: 0; /* Adjust margins to ensure it's aligned with the text */
+      order: 3; /* Ensures the button is placed after the image and text */
+  }
+
+  /* Ensure the image above the button is also centered */
+  .content.sweatshirt .sweatshirt-image {
+      /* Your sweatshirt image class might be different */
+      align-self: center;
+      max-width: 80%; /* Adjust to make sure the image fits within the container */
+      height: auto; /* Maintain aspect ratio */
+      order: 1; /* Image should go on top */
+  }
+
+  .content.sweatshirt h1 {
+      /* Adjust the size and spacing of the title and price */
+      order: 2; /* Text comes after the image but before the button */
+      margin: 10px 0; /* Space between image and price, and price and button */
+  }
+  .footer {
+    display: hidden;
+  }
 }
