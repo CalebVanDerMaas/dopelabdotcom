@@ -4,109 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dope Lab</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="src/output.css">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Welcome to Dope Lab</h1>
-        <img class="snipcart-checkout cart-icon" src="assets/images/ShoppingCart.svg">
+    <div class="header flex items-center justify-center bg-dope-green w-screen ">
+        <div class="ml-auto pl-10 align-middle">
+            <div class="text-dope-blue align-middle">Welcome to Dope Lab</div>
+        </div>
+        <div class="ml-auto">
+            <img class="snipcart-checkout size-24 pr-10 justify-items-center" src="assets/images/ShoppingCart.svg">
+        </div>  
     </div>
-    <div class="circle"></div>
 
-    <div class="main-content">
-        <div class="wrapper">
-            <header class="header">4QS Gear</header>
-            <aside class="sidebar">
-                <img src="assets/merch/GreyShirt.svg">
-            </aside>
-            <article class="content">
-              <h1>Shirt<br/>$13</h1>
-              <p class="product-description">5.5 oz. 50% preshunk cotton, 50% polyester classic fit tee.</p>
-              <img src="assets\images\add.svg" alt="Plus" class="content-image snipcart-add-item"
-                data-item-id="shirt"
-                data-item-price="13.00"
-                data-item-description="5.5 oz. 50% preshunk cotton, 50% polyester classic fit tee."
-                data-item-image="assets/merch/GreyShirt.svg" 
-                data-item-name="Classic Tee Shirt"
-                data-item-custom1-name="Shirt Size"
-                data-item-custom1-options="Small|Medium|Large|X-Large"
-                data-item-custom2-name="Shirt Color"
-                data-item-custom2-options="Black|White|Light Grey|Dark Grey|Red|Blue|Light Blue|Navy|Green|Purple|Yellow|Orange|Pink"
-                data-item-custom3-name="Vinyl Design"
-                data-item-custom3-options="4Q Logo|Forth Quarter Sports Full Front Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
-                data-item-custom4-name="Vinyl Color"
-                data-item-custom4-options="White|Black|Red|Blue|Gold"
-                >
-            </article>
-            <aside class="sidebar">
-                <img src="assets/merch/GreyHoodie.svg">
-            </aside>
-            <article class="content">
-              <h1>Hoodie<br/>$25</h1>
-              <p class="product-description">8 oz. 50% preshunk cotton, 50% polyester classic fit hoodie.</p>
-              <img src="assets\images\add.svg" alt="Plus" class="content-image snipcart-add-item"
-                data-item-id="hoodie"
-                data-item-price="25.00"
-                data-item-description="8 oz. 50% preshunk cotton, 50% polyester classic fit hoodie."
-                data-item-image="assets/merch/GreyHoodie.svg" 
-                data-item-name="Classic Hoodie"
-                data-item-custom1-name="Hoodie Size"
-                data-item-custom1-options="Small|Medium|Large|X-Large"
-                data-item-custom2-name="Hoodie Color"
-                data-item-custom2-options="Black|White|Light Grey|Dark Grey|Red|Blue|Light Blue|Navy|Vegas Gold|Green|Purple|Yellow|Orange|Pink"
-                data-item-custom3-name="Vinyl Design"
-                data-item-custom3-options="4Q Logo|Forth Quarter Sports Full Front Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
-                data-item-custom4-name="Vinyl Color"
-                data-item-custom4-options="White|Black|Red|Blue|Gold"
-                >
-            </article>
-            <aside class="sidebar">
-                <img src="assets/merch/GreyJogger.svg">
-            </aside>
-            <article class="content">
-              <h1>Jogger<br/>$25</h1>
-              <p class="product-description">7.2 oz. 60% cotton, 40% polyester ribed cuff, taper legged jogger.</p>
-              <img src="assets\images\add.svg" alt="Plus" class="content-image snipcart-add-item"
-                data-item-id="jogger"
-                data-item-price="25.00"
-                data-item-description="7.2 oz. 60% cotton, 40% polyester ribed cuff, taper legged jogger."
-                data-item-image="assets/merch/GreyJogger.svg" 
-                data-item-name="Modern Jogger"
-                data-item-custom1-name="Jogger Size"
-                data-item-custom1-options="Small|Medium|Large|X-Large"
-                data-item-custom2-name="Jogger Color"
-                data-item-custom2-options="Black|Navy|Light Grey|Dark Grey|White"
-                data-item-custom3-name="Vinyl Design"
-                data-item-custom3-options="4Q Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
-                data-item-custom4-name="Vinyl Color"
-                data-item-custom4-options="White|Black|Red|Blue|Gold"
-                >
-            </article>
-            <aside class="sidebar">
-                <img src="assets/merch/GreySweatshirt.svg">
-            </aside>
-            <article class="content sweatshirt">
-              <h1>Sweatshirt<br/>$20</h1>
-              <p class="product-description">8 oz. 50% preshunk cotton, 50% polyester classic fit sweatshirt.</p>
-              <img src="assets\images\add.svg" alt="Plus" class="content-image snipcart-add-item"
-                data-item-id="swatshirt"
-                data-item-price="20.00"
-                data-item-description="8 oz. 50% preshunk cotton, 50% polyester classic fit hoodie."
-                data-item-image="assets/merch/GreySweatshirtsvg" 
-                data-item-name="Classic Sweatshirt"
-                data-item-custom1-name="Sweatshirt Size"
-                data-item-custom1-options="Small|Medium|Large|X-Large"
-                data-item-custom2-name="Sweatshirt Color"
-                data-item-custom2-options="Black|White|Light Grey|Dark Grey|Red|Blue|Light Blue|Navy|Green|Purple|Yellow|Orange|Pink"
-                data-item-custom3-name="Vinyl Design"
-                data-item-custom3-options="4Q Logo|Forth Quarter Sports Full Front Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
-                data-item-custom4-name="Vinyl Color"
-                data-item-custom4-options="White|Black|Red|Blue|Gold"
-                >
-            </article>
-            <!-- <footer class="footer"></footer> -->
+    <div class="main-content bg-dope-grey w-screen">
+        <!-- <div class="wrapper grid grid-cols-3 justify-items-center"> -->
+        <!-- Grid container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8">
+            <!-- Card component -->
+            <div class="relative bg-dope-white p-4 rounded-lg shadow-md aspect-w-1 aspect-h-1 aspect-square">
+                <!-- Item image -->
+                <div class="flex justify-center items-center h-3/4">
+                    <img src="assets/merch/GreyShirt.svg" class="h-3/4 w-auto mb-4">
+                </div>
+                <!-- Bottom menu -->
+                <div class="absolute bottom-0 left-0 w-full bg-dope-blue p-2 rounded-b-lg">
+                    <div class="flex justify-between items-center">
+                        <span class="justify-end text-dope-white">$13</span>
+                        <span class="justify-end text-dope-white">Shirt</span>
+                        <img src="assets\images\add.svg" alt="Plus" class="px-4 py-2 content-image snipcart-add-item size-16"
+                        data-item-id="shirt"
+                        data-item-price="13.00"
+                        data-item-description="5.5 oz. 50% preshunk cotton, 50% polyester classic fit tee."
+                        data-item-image="assets/merch/GreyShirt.svg" 
+                        data-item-name="Classic Tee Shirt"
+                        data-item-custom1-name="Shirt Size"
+                        data-item-custom1-options="Small|Medium|Large|X-Large"
+                        data-item-custom2-name="Shirt Color"
+                        data-item-custom2-options="Black|White|Light Grey|Dark Grey|Red|Blue|Light Blue|Navy|Green|Purple|Yellow|Orange|Pink"
+                        data-item-custom3-name="Vinyl Design"
+                        data-item-custom3-options="4Q Logo|Forth Quarter Sports Full Front Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
+                        data-item-custom4-name="Vinyl Color"
+                        data-item-custom4-options="White|Black|Red|Blue|Gold"
+                        >
+                    </div>
+                </div>
+            </div> 
+            <!-- <div class="size-3/4 rounded-[36px] bg-dope-white z-10 aspect-square">
+                <div class="flex flex-col flex-auto justify-end">
+                    <aside class="sidebar">
+                        <img class="size-20"src="assets/merch/GreyShirt.svg">
+                    </aside>
+                    <div class="content flex flex-row justify-end">
+                      <h1 class="justify-end">Shirt<br/>$13</h1>
+                      <p class="product-description">5.5 oz. 50% preshunk cotton, 50% polyester classic fit tee.</p>
+                      <img src="assets\images\add.svg" alt="Plus" class="content-image snipcart-add-item size-16"
+                        data-item-id="shirt"
+                        data-item-price="13.00"
+                        data-item-description="5.5 oz. 50% preshunk cotton, 50% polyester classic fit tee."
+                        data-item-image="assets/merch/GreyShirt.svg" 
+                        data-item-name="Classic Tee Shirt"
+                        data-item-custom1-name="Shirt Size"
+                        data-item-custom1-options="Small|Medium|Large|X-Large"
+                        data-item-custom2-name="Shirt Color"
+                        data-item-custom2-options="Black|White|Light Grey|Dark Grey|Red|Blue|Light Blue|Navy|Green|Purple|Yellow|Orange|Pink"
+                        data-item-custom3-name="Vinyl Design"
+                        data-item-custom3-options="4Q Logo|Forth Quarter Sports Full Front Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
+                        data-item-custom4-name="Vinyl Color"
+                        data-item-custom4-options="White|Black|Red|Blue|Gold"
+                        >
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="wrapper grid grid-cols-3 justify-items-center"> -->
+            
+            <!-- Card component -->
+            <div class="relative bg-dope-white p-4 rounded-lg shadow-md aspect-w-1 aspect-h-1 aspect-square">
+                <!-- Item image -->
+                <div class="flex justify-center items-center h-3/4">
+                    <img src="assets/merch/GreyHoodie.svg" class="h-3/4 w-auto mb-4">
+                </div>
+                <!-- Bottom menu -->
+                <div class="absolute bottom-0 left-0 w-full bg-dope-blue p-2 rounded-b-lg">
+                    <div class="flex justify-between items-center">
+                        <span class="justify-end text-dope-white">$25</span>
+                        <span class="justify-end text-dope-white">Hoodie</span>
+                        <img src="assets\images\add.svg" alt="Plus" class="px-4 py-2 content-image snipcart-add-item size-16"
+                        data-item-id="hoodie"
+                        data-item-price="25.00"
+                        data-item-description="8 oz. 50% preshunk cotton, 50% polyester classic fit hoodie."
+                        data-item-image="assets/merch/GreyHoodie.svg" 
+                        data-item-name="Classic Hoodie"
+                        data-item-custom1-name="Hoodie Size"
+                        data-item-custom1-options="Small|Medium|Large|X-Large"
+                        data-item-custom2-name="Hoodie Color"
+                        data-item-custom2-options="Black|White|Light Grey|Dark Grey|Red|Blue|Light Blue|Navy|Vegas Gold|Green|Purple|Yellow|Orange|Pink"
+                        data-item-custom3-name="Vinyl Design"
+                        data-item-custom3-options="4Q Logo|Forth Quarter Sports Full Front Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
+                        data-item-custom4-name="Vinyl Color"
+                        data-item-custom4-options="White|Black|Red|Blue|Gold"
+                        >
+                    </div>
+                </div>
+            </div> 
+            <!-- Card component -->
+            <div class="relative bg-dope-white p-4 rounded-lg shadow-md aspect-w-1 aspect-h-1 aspect-square">
+                <!-- Item image -->
+                <div class="flex justify-center items-center h-3/4">
+                    <img src="assets/merch/GreyJogger.svg" class="h-3/4 w-auto mb-4">
+                </div>
+                <!-- Bottom menu -->
+                <div class="absolute bottom-0 left-0 w-full bg-dope-blue p-2 rounded-b-lg">
+                    <div class="flex justify-between items-center">
+                        <span class="justify-end text-dope-white">$25</span>
+                        <span class="justify-end text-dope-white">Jogger</span>
+                        <img src="assets\images\add.svg" alt="Plus" class="px-4 py-2 content-image snipcart-add-item size-16"
+                        data-item-id="jogger"
+                        data-item-price="25.00"
+                        data-item-description="7.2 oz. 60% cotton, 40% polyester ribed cuff, taper legged jogger."
+                        data-item-image="assets/merch/GreyJogger.svg" 
+                        data-item-name="Modern Jogger"
+                        data-item-custom1-name="Jogger Size"
+                        data-item-custom1-options="Small|Medium|Large|X-Large"
+                        data-item-custom2-name="Jogger Color"
+                        data-item-custom2-options="Black|Navy|Light Grey|Dark Grey|White"
+                        data-item-custom3-name="Vinyl Design"
+                        data-item-custom3-options="4Q Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
+                        data-item-custom4-name="Vinyl Color"
+                        data-item-custom4-options="White|Black|Red|Blue|Gold"
+                        >
+                    </div>
+                </div>
+            </div> 
+            <!-- Card component -->
+            <div class="relative bg-dope-white p-4 rounded-lg shadow-md aspect-w-1 aspect-h-1 aspect-square">
+                <!-- Item image -->
+                <div class="flex justify-center items-center h-3/4">
+                    <img src="assets/merch/GreyJogger.svg" class="h-3/4 w-auto mb-4">
+                </div>
+                <!-- Bottom menu -->
+                <div class="absolute bottom-0 left-0 w-full bg-dope-blue p-2 rounded-b-lg">
+                    <div class="flex justify-between items-center">
+                        <span class="justify-end text-dope-white">$20</span>
+                        <span class="justify-end text-dope-white">Sweatshirt</span>
+                        <img src="assets\images\add.svg" alt="Plus" class="px-4 py-2 content-image snipcart-add-item size-16"
+                        data-item-id="sweatshirt"
+                        data-item-price="20.00"
+                        data-item-description="8 oz. 50% preshunk cotton, 50% polyester classic fit hoodie."
+                        data-item-image="assets/merch/GreySweatshirtsvg" 
+                        data-item-name="Classic Sweatshirt"
+                        data-item-custom1-name="Sweatshirt Size"
+                        data-item-custom1-options="Small|Medium|Large|X-Large"
+                        data-item-custom2-name="Sweatshirt Color"
+                        data-item-custom2-options="Black|White|Light Grey|Dark Grey|Red|Blue|Light Blue|Navy|Green|Purple|Yellow|Orange|Pink"
+                        data-item-custom3-name="Vinyl Design"
+                        data-item-custom3-options="4Q Logo|Forth Quarter Sports Full Front Logo|Clock Logo (+$3)[+3]|Bars Logo|4 Fingers Logo"
+                        data-item-custom4-name="Vinyl Color"
+                        data-item-custom4-options="White|Black|Red|Blue|Gold"
+                        >
+                    </div>
+                </div>
+            </div>
         </div>
         
     </div>
