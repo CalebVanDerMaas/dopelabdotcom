@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "scrollmagic": "^2.0.8",
+    "three": "^0.136.0",
+    "vanta": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/three": "^0.137.0",
+    "prettier": "2.5.1"
+  }
+}
