@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @-webkit-keyframes fade-in {
   from {
     display: non;
@@ -24,10 +28,6 @@
     opacity: 1;
   }
 }
-html {
-  font-size: 100%;
-  box-sizing: border-box;
-}
 
 *,
 *::before,
@@ -41,16 +41,8 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.3;
-  font-size: 0.875rem;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 300;
-  color: #dbdbdb;
-  background-color: #b0d1e7;
-}
+
+
 
 a,
 a:visited,
@@ -247,17 +239,6 @@ p {
   transform: scale(1.3);
 }
 
-button,
-.button {
-  padding: 0.875rem 2.1875rem;
-  font-family: "syneextrabold";
-  background: black;
-  border-radius: 50px;
-  border-color: #4c4c4c;
-  border-width: thin;
-  color: #dbdbdb !important;
-  cursor: pointer;
-}
 
 :root {
   --theme-bg-color: rgba(16 18 27 / 40%);
@@ -710,21 +691,7 @@ button,
   font-size: 6vh;
 }
 
-html,
-body {
-  height: 100%;
-  background-color: #333844;
-  padding: 0;
-  z-index: 1;
-  transform: translate3d(0, 0, 0.1px);
-}
 
-body {
-  color: white;
-  background-color: #333844;
-  font-family: "Heebo", sans-serif;
-  text-align: center;
-}
 
 h1 {
   display: block;
@@ -871,4 +838,15 @@ li {
   display: table;
   margin: 0 auto;
   grid-template-columns: 0.1111fr 0.1111fr 0.1111fr 0.1111fr 0.1111fr 0.1111fr 0.1111fr 0.1111fr 0.1111fr;
+}
+
+.snipcart-modal__container { 
+  z-index: 999
+}
+
+@font-face {
+  font-family: 'DopeFont'; /* Use a unique name for your font */
+  src: url('../fonts/TheNeueBlackVF.ttf') format('truetype'); /* Update the path to where your font file is located */
+  font-weight: normal;
+  font-style: normal;
 }
