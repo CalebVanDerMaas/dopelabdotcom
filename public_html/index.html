@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <meta name="theme-color" content="#00cc99" />
 
@@ -24,6 +23,7 @@
 
     <link rel="stylesheet" href="/dist/style.css" />
     <link href="src/output.css" rel="stylesheet">
+    <!-- <link href="dist/output.css" rel="stylesheet"> -->
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
@@ -54,11 +54,11 @@
         speed: 1,
       });
     </script>
-    <div class=" z-0 bg-dope-grey  w-full ">
-      <nav class="flex flex-jc-sb flex-ai-c max-h-36">
-        <div class="h-1/3">
-          <a href="/" class="w-full">
-            <img class="w-2/3 p-10" src="images/dope-lab-logo-white.svg" alt="CVDM Logo" />
+    <div class=" z-0 bg-dope-grey h-20 w-full ">
+      <nav class="flex flex-jc-sb flex-ai-c ">
+        <div class="h-1/3 max-h-[100px]">
+          <a href="/" class="w-full h-full">
+            <img id="main-logo" class="p-10 !w-64" src="images/dope-lab-logo-white.svg" alt="Dope Lab Logo" />
           </a>
         </div>
         <div class="h-1/3 pr-20">
@@ -70,68 +70,65 @@
       <div class="relative main-content h-1/2 z-10">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8">
 
-          <div class="relative backdrop-blur-md p-4 rounded-lg shadow-lg aspect-w-1 aspect-h-1 aspect-square">
-            <div class="flex justify-center items-center h-4/5 pt-2">
-              <img src="images/MagicallyDeliciousShirt.svg" class="h-full w-auto mb-4">
+          <div class="relative backdrop-blur-md pt-4 rounded-lg shadow-lg aspect-w-1 aspect-h-1 aspect-square flex flex-col justify-center items-center">
+            <img src="images/MagicallyDeliciousShirt.svg" class="mb-4 p-5" style="max-width: 100%; max-height: 80%; margin: auto;">
+            <div class="bg-dope-grey rounded-b-lg w-full flex items-center justify-around " style="min-height: 20%;">
+                <span class="text-dope-white font-dope text-sm">$25</span>
+                <span class="text-dope-white font-dope text-m text-center">Magically Delicious Tee</span>
+                <div class="bg-dope-crystal hover:bg-white rounded-lg">
+                  <button class="snipcart-add-item w-10 h-10 flex justify-center items-center shadow-lg"
+                   data-item-id="magically-delicious-tee"
+                   data-item-price="25.00"
+                   data-item-description="It's Magically Delicious"
+                   data-item-image="images/MagicallyDeliciousShirt.svg" 
+                   data-item-name="Magically Delicious Shirt"
+                   data-item-custom1-name="Shirt Size"
+                   data-item-custom1-options="Small|Medium|Large|X-Large"
+                   data-item-stackable="never">
+                    <div class="text-dope-grey font-dope font-bold text-xl">+</div>
+            </button>
+                </div>
+                
             </div>
-            <div class="absolute bottom-0 left-0 w-full bg-dope-grey rounded-b-lg h-1/6 flex items-center justify-around">
-              <span class="text-dope-white font-dope text-sm">$25</span>
-              <span class="text-dope-white font-dope text-m">Magically Delicious Tee</span>
-              <!-- Button as the third element in the flex row -->
-              <a class="snipcart-add-item rounded-full bg-dope-crystal w-10 h-10 flex justify-center items-center shadow-lg"
-                data-item-id="magically-delicious-tee"
-                data-item-price="25.00"
-                data-item-description="It's Magically Delicious"
-                data-item-image="images/MagicallyDeliciousShirt.svg" 
-                data-item-name="Magically Delicious Shirt"
-                data-item-custom1-name="Shirt Size"
-                data-item-custom1-options="Small|Medium|Large|X-Large">
-                <div class="text-dope-grey font-dope font-boldz text-xl">+</div>
-              </a>
-            </div>
-          </div>
-          
-          <div class="relative backdrop-blur-md p-4 rounded-lg shadow-lg aspect-w-1 aspect-h-1 aspect-square">
-            <div class="flex justify-center items-center h-4/5 pt-2">
-              <img src="images/BBTBNWDJFOTSYK_1.svg" class="h-full w-auto mb-4">
-            </div>
-            <div class="absolute bottom-0 left-0 w-full bg-dope-grey rounded-b-lg h-1/6 flex items-center justify-around">
-              <span class="text-dope-white font-dope text-sm">$15</span>
-              <span class="text-dope-white font-dope text-m">BBTBNWDJFOTSYK?</span>
-              <!-- Button as the third element in the flex row -->
-              <a class="snipcart-add-item rounded-full bg-dope-crystal w-10 h-10 flex justify-center items-center shadow-lg"
-                data-item-id="magically-delicious-tee"
-                data-item-price="15.00"
-                data-item-description="BBTBNWDJFOTSYK?"
-                data-item-image="images/BBTBNWDJFOTSYK_1.svg" 
-                data-item-name="BBTBNWDJFOTSYK?"
-                data-item-custom1-name="Shirt Size"
-                data-item-custom1-options="Small|Medium|Large|X-Large">
-                <div class="text-dope-grey font-dope font-boldz text-xl">+</div>
-              </a>
-            </div>
-          </div>
+        </div>
 
-          <div class="relative backdrop-blur-md p-4 rounded-lg shadow-lg aspect-w-1 aspect-h-1 aspect-square">
-            <div class="flex justify-center items-center h-4/5 pt-2">
-              <img src="images/emojis.gif" class="h-full w-auto mb-4">
-            </div>
-            <div class="absolute bottom-0 left-0 w-full bg-dope-grey rounded-b-lg h-1/6 flex items-center justify-around">
-              <span class="text-dope-white font-dope text-sm">$?</span>
-              <span class="text-dope-white font-dope text-m">Donate</span>
-              <!-- Button as the third element in the flex row -->
-              <a class="snipcart-add-item rounded-full bg-dope-crystal w-10 h-10 flex justify-center items-center shadow-lg"
-                data-item-id="magically-delicious-tee"
-                data-item-price="1.00"
-                data-item-description="Donate to my cause. You can buy my silence--every dollar is a minute. I'll send you a custom video as proof. Or join my private 24 hour live stream for my 23rd birthday. Flex on me with your wealth and maybe I'll create a page of flexers so you can flex on everyone else too."
-                data-item-image="images/emojis.gif" 
-                data-item-name="Donation"
-                data-item-custom1-name="Donation Type"
-                data-item-custom1-options="Generous Donation[+4]|Rich Flex[+9]|Buy My Silence|24H Birthday Live Stream[+7]">
-                <div class="text-dope-grey font-dope font-boldz text-xl">+</div>
-              </a>
-            </div>
+        <div class="relative backdrop-blur-md pt-4 rounded-lg shadow-lg aspect-w-1 aspect-h-1 aspect-square flex flex-col justify-center items-center">
+          <img src="images/BBTBNWDJFOTSYK_1.svg" class="mb-4 p-5" style="max-width: 100%; max-height: 80%; margin: auto;">
+          <div class="bg-dope-grey rounded-b-lg w-full flex items-center justify-around " style="min-height: 20%;">
+              <span class="text-dope-white font-dope text-sm">$15</span>
+              <span class="text-dope-white font-dope text-xs text-center">BBTBNWDJFOTSYK?</span>
+              <button class="snipcart-add-item rounded-lg bg-dope-crystal hover:bg-white w-10 h-10 flex justify-center items-center shadow-lg"
+                 data-item-id="BBTBNWDJFOTSYK?"
+                 data-item-price="15.00"
+                 data-item-description="BBTBNWDJFOTSYK?"
+                 data-item-image="images/BBTBNWDJFOTSYK_1.svg" 
+                 data-item-name="BBTBNWDJFOTSYK?"
+                 data-item-custom1-name="Shirt Size"
+                 data-item-custom1-options="Small|Medium|Large|X-Large"
+                 data-item-stackable="never">
+                  <div class="text-dope-grey font-dope font-bold text-xl">+</div>
+          </button>
           </div>
+      </div>
+
+      <div class="relative backdrop-blur-md pt-4 rounded-lg shadow-lg aspect-w-1 aspect-h-1 aspect-square flex flex-col justify-center items-center">
+        <img src="images/emojis.gif" class="mb-4 p-5" style="max-width: 100%; max-height: 80%; margin: auto;">
+        <div class="bg-dope-grey rounded-b-lg w-full flex items-center justify-around " style="min-height: 20%;">
+            <span class="text-dope-white font-dope text-sm">$?</span>
+            <span class="text-dope-white font-dope text-m">Donate</span>
+            <button class="snipcart-add-item rounded-lg bg-dope-crystal hover:bg-dope-green w-10 h-10 flex justify-center items-center shadow-lg"
+               data-item-id="donation"
+               data-item-price="1.00"
+               data-item-description="Donate to my cause. You can buy my silence--every dollar is a minute. I'll send you a custom video as proof. Or join my private 24 hour live stream for my 23rd birthday. Flex on me with your wealth and maybe I'll create a page of flexers so you can flex on everyone else too."
+               data-item-image="images/emojis.gif" 
+               data-item-name="Donation"
+               data-item-custom1-name="Donation Type"
+               data-item-custom1-options="Small|Medium|Large|X-Large"
+               data-item-stackable="never">
+                <div class="text-dope-grey font-dope font-bold text-xl">+</div>
+        </button>
+        </div>
+    </div>
 
         </div>
     </div>
