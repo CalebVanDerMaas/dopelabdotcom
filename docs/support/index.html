@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support - Dope Lab</title>
-  <meta name="description" content="Get help with Dope Lab apps.">
+  <meta name="description" content="Get help with Dope Lab apps. Contact us for support.">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -25,17 +25,31 @@
     </div>
 
     <div class="content">
+      <h2>Contact Us</h2>
       <div class="support-card">
-        <p>For all app support inquiries, reach us at:</p>
+        <p>For all app support inquiries, questions, or feedback, contact us directly at:</p>
         <a href="mailto:support@dopelab.com" class="email">support@dopelab.com</a>
+        <p style="margin-top: 12px; font-size: 0.9em; color: #aaa;">We typically respond within 24-48 hours.</p>
       </div>
 
-      <h2>NowPlaying Relay</h2>
-      <p>Common questions:</p>
+      <h2>NowPlaying Relay - FAQ</h2>
+
+      <h3>Apple Music Access</h3>
       <ul>
-        <li><strong>The app says Apple Music access is denied.</strong> Go to Settings > Privacy & Security > Media & Apple Music and enable access for NowPlaying Relay.</li>
-        <li><strong>Webhooks aren't firing.</strong> Make sure the relay is enabled in Settings, your endpoint URL is correct and reachable, and check the Activity tab for delivery status.</li>
+        <li><strong>The app says Apple Music access is denied.</strong> Go to Settings &gt; Privacy &amp; Security &gt; Media &amp; Apple Music and enable access for NowPlaying Relay.</li>
         <li><strong>Music won't play.</strong> NowPlaying Relay requires an active Apple Music subscription. Verify your subscription status in the Music app or Settings.</li>
+      </ul>
+
+      <h3>Webhook Relay</h3>
+      <ul>
+        <li><strong>Webhooks aren't firing.</strong> Make sure the relay is enabled in Settings, your endpoint URL is correct and reachable, and check the Activity tab for delivery status.</li>
+        <li><strong>What data does the relay send?</strong> The relay sends real-time playback data (track name, artist, album, playback state) to your configured webhook endpoints. You control which events are sent via per-endpoint event filtering.</li>
+      </ul>
+
+      <h3>General</h3>
+      <ul>
+        <li><strong>How do I sync settings across devices?</strong> Webhook configuration syncs automatically via iCloud when you're signed in with the same Apple ID.</li>
+        <li><strong>Is my data shared with third parties?</strong> No. NowPlaying Relay does not collect, store, or share any personal data. Webhook payloads are sent only to endpoints you configure. See our <a href="/privacy">Privacy Policy</a> for details.</li>
       </ul>
 
       <h2>Bug Reports</h2>
@@ -51,7 +65,7 @@
 
   <footer>
     <div class="container">
-      &copy; 2026 Dope Lab. All rights reserved.
+      &copy; 2025 Dope Lab. All rights reserved.
     </div>
   </footer>
 </body>
